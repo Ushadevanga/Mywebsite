@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width">
+  <title>CSS website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav>
+    <ul class="topnavbar" id="dropdownclick">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#News">News</a></li>
+      <li class="topnavbar-right"><a href="#Sign up">Sign up</a></li>
+      <li class="topnavbar-right"><a href="#Sign in">Sign in</a></li>
+      <li class="threeline"><a href="javascript:void(0);" onclick="dropdownmenu()">&#9776;</a></li>
+    </ul>
+  </nav>
+
+  <div class="container" style="padding-bottom: 4%;" id="section-1-gradient">
+    <div class="row">
+      <div class="col-6">
+        <div class="leftside-col">
+          <h1 class="larger">My First Website</h1>
+          <h1 class="larger">As a Developer</h1>
+        </div>
+        <form>
+          <div class="leftside-col">
+            <h2>Username</h2>
+            <input class="inputbox" name="username" type="text" placeholder="username">
+            <h2>password</h2>
+            <input class="inputbox" name="password" type="text" placeholder="password">
+          </div>
+        </form>
+      </div>
+      <div class="col-6">
+        <div class="rightside-col">
+          <div class="vediocontainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xGmIl7QbBiA?si=bahFj1KfDNVZd82q"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <h1 class="header">Let's Learn together</h1>
+  </header>
+  <div class="container" style="padding-bottom: 4%;">
+    <div class="row">
+      <div class="col-4">
+        <div class="box">
+          <div class="image">
+            <img src="boo.jpg">
+          </div>
+          <label>Cascading styling sheets</label>
+          <p>CSS, or Cascading Style Sheets, is a language used to describe the presentation of a document written in
+            HTML or XML, including elements such as layout, colors, and fonts. </p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="box">
+          <div class="image">
+            <img src="boo.jpg">
+          </div>
+          <label>Hyper Text Markup Language</label>
+          <p>HTML (Hypertext Markup Language) is the backbone of the web, providing the structure and content for
+            virtually every web page you encounter. It consists of elements enclosed in tags, forming a hierarchical
+            structure that defines the layout and organization of text, images, links, and other media. </p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="box">
+          <div class="image">
+            <img src="boo.jpg">
+          </div>
+          <label>Java Script</label>
+          <p>JavaScript is a versatile and powerful programming language primarily used for enhancing web pages with
+            interactivity and dynamic behavior. As a client-side scripting language, it runs directly in the browser,
+            allowing developers to manipulate HTML content, handle user interactions, and dynamically update page
+            elements </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="learnmore">Learn More</button>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <div>
+          <article>
+            <p class="para">Web development encompasses the process of creating websites or web applications, ranging
+              from
+              simple static web pages to complex dynamic platforms. It involves various disciplines, including front-end
+              development, back-end development, and full-stack development.Front-end development focuses on the user
+              interface and experience, involving HTML, CSS, and JavaScript to create the visual elements of a website
+              and
+              make it interactive. Front-end developers ensure that web pages are accessible, responsive, and visually
+              appealing across different devices and browsers.</p>
+          </article>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="photo">
+          <img src="web.jpeg">
+          <div>
+          </div>
+        </div>
+      </div>
+      <footer class="foot">
+        <div class="row">
+          <div class="col-3 case">
+            <h1>Phython</h1>
+            <ul>
+              <li>Codes</li>
+              <li>Theory Concepts</li>
+              <li>Practice</li>
+            </ul>
+          </div>
+          <div class="col-3 case">
+            <h1>java</h1>
+            <ul>
+              <li>Codes</li>
+              <li>Theory Concepts</li>
+              <li>Practice</li>
+            </ul>
+          </div>
+          <div class="col-3 case">
+            <h1>C++</h1>
+            <ul>
+              <li>Codes</li>
+              <li>Theory Concepts</li>
+              <li>Practice</li>
+            </ul>
+          </div>
+          <div class="col-3 case">
+            <h1>C programs</h1>
+            <ul>
+              <li>Codes</li>
+              <li>Theory Concepts</li>
+              <li>Practice</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script>
+        function dropdownmenu() {
+          var x = document.getElementById("dropdownclick");
+          if (x.className === "topnavbar") {
+            x.className += " responsive"
+          } else {
+            x.className = "topnavbar"
+          }
+        }
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+/* html {
+  height: 100%;
+  width: 100%;
+} */
+
+
+
+/*#############defaults#####################  */
+
+
+nav,
+header,
+footer {
+  display: block;
+}
+
+body {
+  margin: 0px;
+  line-height: 1;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  /* padding-bottom: 4%; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+.col-7 {
+  width: 58.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+
+
+/*#############style case################## */
+
+
+#section-1-gradient {
+  background: #076Dff;
+  background: -webkit-linear-gradient(#076Dff, skyblue);
+  background: -o-linear-gradient(#076Dff, skyblue);
+  background: -moz-linear-gradient(#076Dff, skyblue);
+  background: linear-gradient(#076Dff, skyblue);
+}
+
+div.box {
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15),
+    0 2px 3px 0 rgba(0, 0, 0, .1);
+  text-align: center;
+  padding: 5px;
+  margin: 25px;
+  border: 2px blue;
+  border-radius: 7px;
+}
+
+div.box img.image {
+  width: 100px;
+  height: 100px;
+}
+
+label {
+  font-size: 25px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.para {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 40px;
+  padding-bottom: 4%;
+}
+
+button.learnmore {
+  width: 200px;
+  display: block;
+  margin: auto;
+  height: 40px;
+  border-width: 0;
+  border-radius: 10px;
+  background-color: red;
+  color: #fff;
+  font-size: 20px;
+}
+
+button.learnmore:hover {
+  background-color: blue;
+}
+
+.larger {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+  line-height: 50px;
+}
+
+div.row div.col-5 {
+  text-align: center;
+}
+
+div.photo img {
+  box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, .15), 2px 2px 17px 2px rgba(0, 0, 0, 1);
+  margin-bottom: 4%;
+}
+
+form h2 {
+  color: white;
+}
+
+input[type="text"] {
+  width: 400px;
+  font-size: 20px;
+  min-width: 100px;
+  border-radius: 6px;
+  border-width: 0;
+}
+
+.leftside-col {
+  margin-left: 200px;
+}
+
+.rightside-col {
+  margin-left: 50px;
+}
+
+h1.header {
+  color: black;
+  text-align: center;
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+
+footer.foot {
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  padding-left: 10%;
+}
+
+footer.foot ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+footer.foot h1 {
+  color: white;
+  font-size: 25px;
+  line-height: 1.2px;
+  font-weight: bold;
+}
+
+footer.foot ul li {
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+}
+
+
+/*############navbar#############  */
+
+
+nav {
+  margin: 0;
+  width: 100%;
+}
+
+nav ul {
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul.topnavbar li {
+  list-style: none;
+  float: left;
+}
+
+ul.topnavbar li.topnavbar-right {
+  float: right;
+}
+
+ul.topnavbar li a {
+  display: block;
+  padding: 5px;
+  color: #666;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  min-height: 16px;
+}
+
+ul.topnavbar li a:hover {
+  background-color: blue;
+}
+
+ul.topnavbar li.threeline {
+  display: none;
+}
+
+
+
+/*############mobile#################  */
+
+
+@media screen and (max-width:680px) {
+  ul.topnavbar li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  ul.topnavbar li.threeline {
+    display: block;
+    float: right;
+  }
+
+  ul.topnavbar.responsive li.threeline {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.topnavbar.responsive {
+    position: relative;
+  }
+
+  ul.topnavbar.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.topnavbar.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  .col-6,
+  .col-4,
+  .col-7,
+  .col-5 {
+    width: 100%;
+    margin: 0;
+  }
+
+  div.case {
+    width: 50%;
+    display: block;
+  }
+
+  div.leftside-col,
+  div.rightside-col {
+    margin: 15px;
+  }
+
+  input[type="text"] {
+    width: 200px;
+  }
+
+  .vediocontainer iframe {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  input.inputbox{
+    position: relative;
+    width: 97%;
+  }
+}
